@@ -18,8 +18,8 @@ export class CategoryComponent implements OnInit {
   playerName = '';
   categoryId = null;
 
-  navigateToQuiz() {
-    this.router.navigate(['/quiz', this.categoryId, this.playerName]);
+  navigateToQuiz(categoryId: number) {
+    this.router.navigate(['/quiz', categoryId, this.playerName]);
   }
 
   ngOnInit(): void {

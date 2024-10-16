@@ -10,7 +10,7 @@
 </section>
 
 <div align="center" *ngFor="let content of categoryContent; let i = index">
-  <button class="home_quiz-btn btn--outline">{{ content?.categorie }}</button>&nbsp;
+  <button class="home_quiz-btn btn--outline" (click)="navigateToQuiz(i+1)">{{ content?.categorie }}</button>&nbsp;
 </div>
 
 

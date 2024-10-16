@@ -20,6 +20,22 @@ export class CategoryService {
     });
   }
 
+  getCategoryId() {
+    this.http.get('http://localhost:3000/category').subscribe((category: any) => {
+      for (const categorie of category) {
+        this.http.get(`http://localhost:3000/category?categoryId=${categorie.id}`);
+      }
+    });
+  }
+
+  getCategoryName() {
+    this.http.get('http://localhost:3000/category').subscribe((category: any) => {
+      for (const categorie of category) {
+        this.http.get(`http://localhost:3000/category?libelle=${categorie.libelle}`);
+      }
+    });
+  }
+
   resetCategory() {
     this.categoryContent = [];
   }
