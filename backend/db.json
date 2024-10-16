@@ -499,5 +499,23 @@
       "password": "test",
       "id": 3
     }
+  ],
+  "category": [
+    {
+      "categoryId": 1,
+      "libelle": "HTML"
+    },
+    {
+      "categoryId": 1,
+      "libelle": "CSS"
+    },
+    {
+      "categoryId": 1,
+      "libelle": "JS"
+    },
+    {
+      "categoryId": 1,
+      "libelle": "PHP"
+    }
   ]
 }
