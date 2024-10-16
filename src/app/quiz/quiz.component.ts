@@ -10,6 +10,7 @@ import { QuizService } from "../shared/services/quiz.service";
 export class QuizComponent implements OnInit {
   isQuizFinished = this.quizService.isQuizFinished;
   playerName = '';
+  categoryName = '';
 
   constructor(
     private quizService: QuizService,
