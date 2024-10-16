@@ -8,3 +8,9 @@
     </button>
   </form>
 </section>
+
+<div align="center" *ngFor="let content of categoryContent; let i = index">
+  <button class="home_quiz-btn btn--outline">{{ content?.categorie }}</button>&nbsp;
+</div>
+
+
